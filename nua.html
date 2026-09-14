@@ -6,16 +6,17 @@
 <title>NüA | NüA Studio</title>
 <meta name="description" content="NüA Studio - 自然光の中で、二人だけの特別な瞬間を丁寧に残す前撮り撮影スタジオ。">
 <meta name="color-scheme" content="light only">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZmZmZmZmIi8+CiAgPHRleHQgeD0iMzIiIHk9IjQ2IiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iNTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMWMxYjE5Ij5OPC90ZXh0Pgo8L3N2Zz4K">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAACpklEQVR4nO2Wz09TQRDHd3b32cej+C54wsQQtSFGYyD+ggQTowcJ9iJQLuKP+A9wMPyWGluDQe60oMErRpAbXsoBz8QDcqhcse3BEkItNLzdHQ8rDYl9LSWQaMIc37y3n5mdme88QERylEaP9PRjwD8B4G4OpZRSCgAIQYKEMgYAeS8iSin1E0SklFJaOFY46jYtkIFSilL6bXl58cuibdumaSql/Pf8HtPMxxuPxxdisaqTVQY30umf9fUNjU1NiLg3S20F8tIvmRWmYRjv3k4GOjo6A53hcAgAdi+NmB6PWWF+mJ4OBp8DQKW30jUFLGpDQ4N3bt9qqL9c5bUWYjFEFELkvROTE+1t94uf4NpFjuNIKVKpZHPzzd6+/mx2q6fn2fr6OgAgouM4UsrM5mYulxNCCCHcznEFAABj3DCMdDodCHT6/f6lpa/Dw0OUUn1RjDFKKQBwzt1aqBjgD4aAUgoRR9+M1daeeT81NTs7wxiTUhb/cL8AQghjDAB8Pl8w+EJKOTjQv7a2ZhjGoQG07ezsPHz0uCMQiMdX+3p7dCXIPmaoDKlAxJGR13V1vpmZjxPRCAAUqW3ZAF3bmprTofArznko9DKZSNi2rVSJYpSRga5tW1v7g66uH4lU/0Dfr2yWMVc1KxtACKGUImIoFL508cLn+floJGLb9gEBiCh3h1ZPLyFEq0V19anR0THhOMlkonRMbg7DMBjnlmVZlsU5z/clY0wIcbel5cnTp5lM9oTHU4Lwt3royVpd/R6Njl+7eqXxxvVIZHxlZSXvUkpJKTOZzPlzZ1tbW/RucNOiAiXSqpvbzgkhuru7kZCNjY3t7a28Sw+B1+v9NDeXTKbIrgAXtIMvnILqXwZgz8p0XYr6xhhjBwEclv3/vy3HgJL2G6x7xOy7JBHrAAAAAElFTkSuQmCC">
 
-<meta name="theme-color" content="#ffffff">
+
+<meta name="theme-color" content="#f4f2ee">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --ink: #1c1b19;
-  --paper: #ffffff;
+  --paper: #f4f2ee;
   --rose: #b8828a;
   --sage: #8a9182;
   --line-dark: rgba(28, 27, 25, 0.1);
@@ -39,6 +40,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 .serif { font-family: 'Shippori Mincho', serif; }
